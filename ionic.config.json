@@ -1,0 +1,7 @@
+{
+  "name": "microtopinfo",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
