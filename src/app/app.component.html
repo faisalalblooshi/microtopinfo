@@ -1,0 +1,45 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+ <ion-searchbar  debounce="500"  placeholder="What are you looking for?"></ion-searchbar>
+     
+   
+    
+  </ion-toolbar>
+</ion-header>
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu type="push" contentId="main-content" type="overlay">
+      <ion-content>
+        <ion-list id="inbox-list">
+          <ion-item></ion-item>
+          <!-- <img src="../assets/microtop.jpg"> -->
+
+          <ion-item (click)="termis('')">
+            <ion-label >All</ion-label><ion-icon src="../../assets/list.svg"></ion-icon>
+          </ion-item>
+
+          <ion-item (click)="termis('Laptops')">
+            <ion-label >Laptops</ion-label><ion-icon src="../../assets/laptop.svg"></ion-icon>
+          </ion-item>
+          <ion-item (click)="termis('Dekstops')">
+            <ion-label >Desktops</ion-label><ion-icon src="../assets/tower-pc.svg"></ion-icon>
+          </ion-item>
+          <ion-item (click)="termis('Printing & Supplies')"><ion-label>Printing & Supplies</ion-label><ion-icon  src="../../assets/printer.svg"></ion-icon></ion-item>
+          <ion-item (click)="termis('Computer Accessories')"><ion-label>Computer Accessories</ion-label><ion-icon src="../assets/keyboard.svg"></ion-icon></ion-item>
+          <ion-item (click)="termis('Networking')"><ion-label>Networking</ion-label><ion-icon src="../assets/usb.svg"></ion-icon></ion-item>
+          <ion-item (click)="termis('Storage')"><ion-label>Storage</ion-label><ion-icon src="../assets/hard-drive.svg"></ion-icon></ion-item>
+          <ion-item (click)="termis('Monitors & Projectors')"><ion-label>Monitors & Projectors</ion-label><ion-icon src="../assets/projector.svg"></ion-icon></ion-item>
+          <ion-item (click)="termis('Services')"><ion-label>Services</ion-label><ion-icon src="../assets/industry.svg"></ion-icon></ion-item>
+          
+          
+          
+          
+          
+
+          
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>
